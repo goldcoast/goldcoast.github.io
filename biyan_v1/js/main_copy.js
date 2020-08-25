@@ -78,26 +78,23 @@ var wsUri ="ws://192.168.1.1:8000";
 // var socket = new WebSocket(wsUri); 
 var socket = ''
 // 监听Socket的关闭
+/**
 socket.onclose = function(event) {
 	console.log('Client notified socket has closed',event); 
-	// logc(event);
 }; 
 socket.onerror = function(event) {
 	console.log('Client notified socket has error',event); 
-	// logc(event);
 }; 
 socket.onmessage = function(event) {
 	try{
         msgArray.push(event)
         localStorage.setItem('onSocketMsg', msgArray);
 		console.log('Client received a message',event); 
-		// logc(event);
 	}catch(e){
 		console.log("message: "+ e);
 	}
-};
+};*/
 // 打开Socket 
-socket.onopen = function(event) {
+/*socket.onopen = function(event) {
 	console.log("Connected", event);
-	// logc(event);
-};
+};*/
