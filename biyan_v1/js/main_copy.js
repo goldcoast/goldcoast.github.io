@@ -72,10 +72,11 @@ function socketSendMsg(msg){
     socket.send(msg+'');
 };
 
+
 var msgArray = []  // 保存接收信息
 var wsUri ="ws://192.168.1.1:8000"; 
-var socket = new WebSocket(wsUri); 
-
+// var socket = new WebSocket(wsUri); 
+var socket = ''
 // 监听Socket的关闭
 socket.onclose = function(event) {
 	console.log('Client notified socket has closed',event); 
