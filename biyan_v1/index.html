@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>笔颜设备配网</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<div class="contact100-form validate-form" >
+				<span class="contact100-form-title">
+					笔颜设备配网
+				</span>
+
+				<div id="setting">
+					<div class="wrap-input100 validate-input" data-validate="请填写wifi名">
+						<input class="input100" type="text" name="wifiname" placeholder="WIFI 名字" id="wifiName" onfocus="hideValidate(this.id)" value="CMCC-QpEx">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "请填写密码">
+						<input class="input100" type="password" name="pwd" placeholder="WIFI 密码" id="pwd" onfocus="hideValidate(this.id)" value="ppu7rjtp">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "设备昵称">
+						<input class="input100" type="text" name="nickName" placeholder="设备昵称" id="nickName" onfocus="hideValidate(this.id)" value="笔颜小白">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-contact100-form-btn">
+						<button class="contact100-form-btn" onclick="sub()">
+							<span>
+								<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+								保存
+							</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="contact100-form-done" id="done">
+					<span>
+						设置完成啦！<br>
+						设备即将关机, <br>
+						请将设备重新开机, <br>
+						再进入小程序连接设备！
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main_copy.js"></script>
+
+</body>
+</html>
